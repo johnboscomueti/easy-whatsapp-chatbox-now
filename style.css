@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    float: right;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.main-chat {
+    width: 75%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.recipient-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.recipient-profile img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.chat-messages {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    max-height: 60vh;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.message.sent {
+    justify-content: flex-end;
+}
+
+.message.received {
+    justify-content: flex-start;
+}
+
+.message img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.message p {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.message.sent p {
+    background-color: #dcf8c6;
+}
+
+.message-form {
+    display: flex;
+    align-items: center;
+}
+
+.message-form textarea {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    resize: none;
+    margin-right: 10px;
+}
+
+.message-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.message-form button:hover {
+    background-color: #45a049;
+}
